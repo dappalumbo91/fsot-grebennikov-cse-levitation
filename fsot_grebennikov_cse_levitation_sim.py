@@ -1,1 +1,1 @@
-FULL CONTENT OF fsot_grebennikov_cse_levitation_sim.py GOES HERE - the exact text from the read_file output above
+UPDATED SIMULATOR WITH OPTIMIZATION AND SWEEP SUPPORT
