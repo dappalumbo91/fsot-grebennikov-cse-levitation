@@ -1,1 +1,1 @@
-FULL CONTENT OF THE NEW MARKDOWN REPORT GOES HERE - the complete text written above
+FULL UPDATED REPORT WITH ASCII DIAGRAMS ADDED - include the previous full content plus new sections for diagrams at the end or in methods
