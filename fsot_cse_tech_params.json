@@ -1,0 +1,1 @@
+{"recommended_cavity_radius_um": 5.0, "cone_angle_deg": 30.0, "array_density_per_m2": 40000, "target_coherence": 0.85, "stabilization_C_eff": 0.9577, "esp32_control_note": "Map tilt to servo PWM. Use multi-sensory input as observer to modulate phase_var for closed-loop stabilization."}
