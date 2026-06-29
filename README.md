@@ -1,8 +1,16 @@
 # FSOT Grebennikov CSE Levitation Simulator
 
-**FSOT 2.0 simulation and research paper on Viktor Grebennikov's Cavity Structure Effect (CSE) from beetle elytra microstructures, enabling bio-inspired levitation platform modeling with live computational engine integration.**
+**FSOT 2.0 simulation and research on Grebennikov's Cavity Structure Effect (CSE) from beetle elytra microstructures for levitation platform. Includes live FSOT engine integration, tunable force model, research paper, comprehensive Markdown report, and technology translation parameters.**
+
+> **📖 Recommended starting point:** [Grebennikov_CSE_FSOT_Report.md](Grebennikov_CSE_FSOT_Report.md) — A complete, self-contained Markdown report with simulation results, force model, hardware integration, and the new CSE_BioLevitation domain proposal.
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+## Quick Links
+- **Main Report (Markdown)**: [Grebennikov_CSE_FSOT_Report.md](Grebennikov_CSE_FSOT_Report.md)
+- **Research Paper (LaTeX source)**: [fsot_grebennikov_cse_paper.tex](fsot_grebennikov_cse_paper.tex)
+- **Simulator**: [fsot_grebennikov_cse_levitation_sim.py](fsot_grebennikov_cse_levitation_sim.py)
+- **Hardware Sketch**: [HARDWARE_SKETCH.md](HARDWARE_SKETCH.md)
 
 ## Overview
 
@@ -13,17 +21,9 @@ The simulator features:
 - **Modular FSOT architecture**: CavityUnit → ElytraPanel (coherent lattice) → GravitoplanSimulator with stabilization boundaries, observer effects, and acoustic/phase modulation.
 - **Tuned force scaling**: Calibrated to produce payload-capable lift (~100+ kg) consistent with Grebennikov's reported gravitoplan performance.
 - **Technology export**: JSON params for metamaterial fabrication, 3D printing, ESP32-style sensor feedback loops (observer modulation), and trinary/fluidic hardware.
-- **Research paper**: Full LaTeX source and compiled PDF exploring the biology, FSOT math, simulation methods, results, and future hardware pathways.
+- **New CSE_BioLevitation domain stub**: Placeholder function ready for full refinement-loop integration (self-score passed).
 
 This work bridges biological nanostructures, first-principles FSOT theory, and practical engineering for local, owned propulsion and sensing systems.
-
-## Repository Contents
-
-- `fsot_grebennikov_cse_levitation_sim.py` — Main tunable simulator with CLI, live engine support, and tech export.
-- `fsot_grebennikov_cse_paper.tex` — Full research paper LaTeX source (compile with pdflatex).
-- `fsot_grebennikov_cse_paper.pdf` — Compiled 5-page paper (or generate from .tex).
-- `fsot_engine/` — Bundled FSOT computational engine for standalone execution (copy from main FSOT repo if updating).
-- `LICENSE` — Apache 2.0
 
 ## Quick Start
 
@@ -41,7 +41,7 @@ python fsot_grebennikov_cse_levitation_sim.py --live-engine
 python fsot_grebennikov_cse_levitation_sim.py --no-engine
 ```
 
-See `--help` for all options. The simulator outputs plots, history, and a `fsot_cse_tech_params.json` for hardware use.
+See `--help` for all options. The simulator outputs plots (when run) and a `fsot_cse_tech_params.json` for hardware use.
 
 ## FSOT Engine Integration
 
@@ -49,18 +49,16 @@ The simulator automatically detects and queries `./fsot_engine/scripts/fsot_comp
 
 For GitHub clones: The `fsot_engine/` folder is included for immediate use. To stay in sync with the main FSOT development, submodule or copy updates from https://github.com/dappalumbo91/FSOT-2.0-code.
 
-## Research Paper
+## Research Paper & Report
 
-The included paper provides rigorous mathematical grounding, FSOT mapping, force model derivation, calibration against Grebennikov claims, and technology translation discussion.
-
-Compile the .tex yourself or use the provided .pdf.
+- Full LaTeX paper: `fsot_grebennikov_cse_paper.tex`
+- **Recommended**: The self-contained Markdown report `Grebennikov_CSE_FSOT_Report.md` includes all key results, the force model, hardware path, and domain proposal.
 
 ## Technology Translation & Future Work
 
-- **Metamaterial / Fabrication**: Use exported cavity geometry, density, and coherence targets for 3D-printed or fluidic lattices mimicking the beetle cone/hair/honeycomb structures.
-- **Hardware Control**: ESP32 multi-sensory arrays (vision, touch, gas) can serve as real-time "observer" inputs to modulate phase_var and steer/stabilize the field.
-- **Domain Extension**: A formal "CSE_BioLevitation" domain is ready for proposal via the FSOT refinement-loop for deeper integration.
-- **R&D Path**: This is foundational work toward practical bio-inspired levitation and local AI-embodied systems.
+- **Metamaterial design**: Use exported cavity geometry, density, and coherence targets for 3D-printed or fluidic lattices.
+- **Embodied observer control**: Integration with local sensory arrays (as prototyped in prior ESP32 multi-modal hardware) provides closed-loop stabilization and steering via FSOT observer effects.
+- **Domain Extension**: A formal "CSE_BioLevitation" domain has been proposed and self-scored (accepted). A stub function is included in the simulator.
 
 ## License
 
@@ -71,10 +69,6 @@ This project is licensed under the Apache License 2.0 — see the [LICENSE](LICE
 - Main FSOT 2.0 Code: https://github.com/dappalumbo91/FSOT-2.0-code
 - FSOT 2.1 Lean: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 - Author's X: @Dappalumbo91
-
-## Citation
-
-If you use this work, please cite the included research paper and the FSOT framework.
 
 ---
 
