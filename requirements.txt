@@ -1,0 +1,5 @@
+mpmath>=1.3.0
+numpy>=1.26
+matplotlib>=3.8
+# For full FSOT engine: the bundled fsot_engine/ or main repo
+# Optional for hardware: pyserial (for ESP32), etc.
