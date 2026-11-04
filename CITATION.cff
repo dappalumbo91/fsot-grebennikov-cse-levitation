@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "fsot-grebennikov-cse-levitation: FSOT 2.0 simulation of Grebennikov's Cavity Structure Effect"
+type: software
+authors:
+  - family-names: Palumbo
+    given-names: Damian Arthur
+license: Apache-2.0
+repository-code: "https://github.com/dappalumbo91/fsot-grebennikov-cse-levitation"
+version: 0.1.0
+date-released: 2026-11-04
+keywords:
+  - fsot
+  - grebennikov
+  - cavity-structure-effect
+  - simulation
+  - python
+  - reproducible-research
+references:
+  - type: software
+    title: "FSOT-2.1-Lean (authority: vendor/fsot_compute.py, pin AEB2AD)"
+    authors:
+      - family-names: Palumbo
+        given-names: Damian Arthur
+    repository-code: "https://github.com/dappalumbo91/FSOT-2.1-Lean"
