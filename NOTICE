@@ -1,0 +1,13 @@
+fsot-grebennikov-cse-levitation
+Copyright 2026 Damian Arthur Palumbo
+
+This product is an FSOT 2.0 simulation and research study of Grebennikov's
+Cavity Structure Effect (beetle elytra microstructures) toward a
+levitation platform.
+This repository is part of the FSOT (Fluid Spacetime Omni-Theory) family.
+Theory authority is vendor/fsot_compute.py in
+https://github.com/dappalumbo91/FSOT-2.1-Lean (pin AEB2AD), also by
+Damian Arthur Palumbo and licensed under the Apache License 2.0.
+
+Python dependencies (not bundled, see requirements.txt): mpmath (BSD-3-Clause),
+NumPy (BSD-3-Clause) and Matplotlib (Matplotlib/PSF-style license).
